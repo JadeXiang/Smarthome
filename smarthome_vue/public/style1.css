@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+
+/* canvas{width: 100% ; height: 100%} */
+/* div#drawArea{
+    position: fixed;
+} */
+
+#user-select {
+width: 100%;
+height: 116px;
+background: #c5b4a3;
+line-height: 80px;
+text-align: center;
+/* 方法一 */
+position: fixed;
+bottom: 0;
+}
+
+.change{
+display: block;
+}
+
+.model, .color, .light, .texture
+{
+display: none;
+}
+
+
+#ab{
+position: relative; 
+display: block;
+width: 80px;
+}
+
+#change-model, #change-color, #change-light, #change-texture
+{
+position: relative;
+display: block;
+width: 64px;
+height: 100px;
+margin: 0;
+padding: 5px;
+font-size: 30px;
+/* line-height: 1; */
+background-color: #b4aaa1;
+color: #442a2a;
+text-decoration: none;
+border-left: 40px;
+border-top: none;
+border-bottom-width: none;
+border-right: 2px solid #b4aaa1;
+}
+
+#model1, #model2, #model3,
+#color1, #color2, #color3,
+#light1, #light2,
+#texture1, #texture2, #texture3
+{
+position: relative;
+display: block;
+width: 64px;
+height: 100px;
+margin: 0;
+padding: 5px;
+/* line-height: 1; */
+background-color: #b4aaa1;
+color: #442a2a;
+text-decoration: none;
+border-left: 40px;
+border-top: none;
+border-bottom-width: none;
+border-right: 2px solid #b4aaa1;
+}
+
+#play img, #back1 img, #back2 img, #back3 img, #back4 img
+{
+    width: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+#color-img{
+    position: relative;
+    max-width: 80%;
+    margin-top: 5px;
+}
+
+#color-name{
+    margin-top: 30px;
+    font-size: 20px;
+}

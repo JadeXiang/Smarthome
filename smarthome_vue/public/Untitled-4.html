@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Title</title>
+    <link href="/style1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="init();"> 
+  <!-- onload="draw();" -->
+      <div id="room"></div>
+      <div id="user-select">
+        <table id="change">
+          <tbody>
+            <tr>
+              <td>
+                <a href="javascript:;" id="ab"></a>
+              </td>
+              <td>
+                <a href="javascript:;" id="play">
+                  <div>
+                    <img src="/icon/播放.svg" alt="" id="playimg">
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="change-model">
+                  <div style="height: 10px;">
+                    <img src="/icon/模型.svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    模型
+                  </div>
+                  </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="change-color">
+                  <div style="height: 10px;">
+                    <img src="/icon/颜色.svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    颜色
+                  </div>
+                  </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="change-texture">
+                  <div style="height: 10px;">
+                    <img src="/icon/材质.svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    材质
+                  </div>
+                  </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="change-light">
+                  <div style="height: 10px;">
+                    <img src="/icon/光源.svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    光源
+                  </div>
+                  </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="model">
+          <tbody>
+            <tr>
+              <td>
+                <a href="javascript:;" id="ab"></a>
+              </td>
+              <td>
+                <a href="javascript:;" id="back1">
+                  <div>
+                    <img src="/icon/返回 .svg" alt="">
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="model1">
+                  <div style="height: 10px;">
+                    <img src="/icon/模型 (1).svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    模型1
+                  </div>
+                  </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="model2">
+                  <div style="height: 10px;">
+                    <img src="/icon/模型 (2).svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    模型2
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="model3">
+                  <div style="height: 10px;">
+                    <img src="/icon/模型 (3).svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    模型3
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="color">
+          <tbody>
+            <tr>
+              <td>
+                <a href="javascript:;" id="ab"></a>
+              </td>
+              <td>
+                <a href="javascript:;" id="back2">
+                  <div>
+                    <img src="/icon/返回 .svg" alt="">
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="color1">
+                  <div style="height: 10px;">
+                    <img src="/red.png" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    红色
+                  </div>
+                  </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="color2">
+                  <div style="height: 10px;">
+                    <img src="/blue.png" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    蓝色
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="color3">
+                  <div style="height: 10px;">
+                    <img src="/gree.png" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    绿色
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="texture">
+          <tbody>
+            <tr>
+              <td>
+                <a href="javascript:;" id="ab"></a>
+              </td>
+              <td>
+                <a href="javascript:;" id="back3">
+                  <div>
+                    <img src="/icon/返回 .svg" alt="">
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="texture1">
+                  <div style="height: 10px;">
+                    <img src="/red.png" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    材质1
+                  </div>
+                  </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="texture2">
+                  <div style="height: 10px;">
+                    <img src="/blue.png" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    材质2
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="texture3">
+                  <div style="height: 10px;">
+                    <img src="/gree.png" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    材质3
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="light">
+          <tbody>
+            <tr>
+              <td>
+                <a href="javascript:;" id="ab"></a>
+              </td>
+              <td>
+                <a href="javascript:;" id="back4">
+                  <div>
+                    <img src="/icon/返回 .svg" alt="">
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="light1">
+                  <div style="height: 10px;">
+                    <img src="/icon/环境光.svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    环境光
+                  </div>
+                  </a>
+              </td>
+              <td>
+                <a href="javascript:;" id="light2">
+                  <div style="height: 10px;">
+                    <img src="/icon/光.svg" alt="" id="color-img">
+                  </div>
+                  <div id="color-name" style="height: 10px;">
+                    点光源
+                  </div>
+                  </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+    
+
+</body>
+
+<!--引入three.js三维引擎-->
+<script src="http://www.yanhuangxueyuan.com/versions/threejsR92/build/three.js"></script>
+<!-- <script src="./three.js"></script> -->
+<!-- <script src="http://www.yanhuangxueyuan.com/threejs/build/three.js"></script> -->
+<script src="http://www.yanhuangxueyuan.com/threejs/examples/js/loaders/OBJLoader.js"></script>
+<script src="http://www.yanhuangxueyuan.com/threejs/examples/js/controls/OrbitControls.js"></script>
+<script src="http://www.yanhuangxueyuan.com/threejs/examples/js/libs/stats.min.js"></script>
+<script src="http://www.yanhuangxueyuan.com/threejs/examples/js/libs/dat.gui.min.js"></script>
+
+<script src="/three.js-master/examples/js/Detector.js"></script>
+
+<!--拖拽控件-->
+<script src="http://www.yanhuangxueyuan.com/threejs/examples/js/controls/DragControls.js"></script>
+
+<script src="http://www.yanhuangxueyuan.com/threejs/examples/js/controls/TrackballControls.js"></script>
+<!--可视化平移控件-->
+<script src="http://www.yanhuangxueyuan.com/threejs/examples/js/controls/TransformControls.js"></script>
+
+<script src="/control_1.js"></script>
+<script src="/button.js"></script>
+
+<!-- <script src="/control_1.js"></script> -->
+
+</html>
