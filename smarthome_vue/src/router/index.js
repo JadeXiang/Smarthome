@@ -4,6 +4,9 @@ import store from '../store'
 
 import Home from '../views/Home.vue'
 
+import one from '../views/one'
+// import two from '../views/two'
+
 import Product from '../views/Product.vue'
 import Category from '../views/Category.vue'
 import Search from '../views/Search.vue'
@@ -19,6 +22,19 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  // {
+  //   path:'/two',
+  //   name:'two',
+  //   component: two,
+  // },
+  {
+    path: '/one',
+    name:'one',
+    component: one,
+    meta:{
+      showNav:true
+  }
   },
   {
     path: '/about',

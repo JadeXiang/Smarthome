@@ -1,6 +1,6 @@
 <template>
-  <div id="wrapper">
-    <nav class="navbar is-dark">
+  <div id="wrapper" >
+    <nav v-show="!(path ==='/one')" class="navbar is-dark" >
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item"><strong>智慧家居</strong></router-link>
 
@@ -65,7 +65,7 @@
       <router-view/>
     </section>
 
-    <footer class="footer" style="background-color: #363636;padding: 20px 0px 20px 0px ">
+    <footer v-show="!(path ==='/one')" class="footer" style="background-color: #363636;padding: 20px 0px 20px 0px ">
       <div id="tips">
       <div style="align-items: center;justify-content: center;font-size:20px;display:flex">@联系我们</div>
       <div style="align-items: center;justify-content: center;display:flex">联系人：罗女士 电话：12345678910</div>
@@ -82,6 +82,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      path:'',
       showMobileMenu: false,
       cart: {
         items: []
@@ -100,8 +101,14 @@ export default {
     }
   },
   mounted() {
-    this.cart = this.$store.state.cart
+    this.cart = this.$store.state.cart;
+    this.path = this.$route.path;
   },
+  watch:{
+            $route(to,from){
+                this.path = to.path
+            }
+        },
   computed: {
       cartTotalLength() {
           let totalLength = 0

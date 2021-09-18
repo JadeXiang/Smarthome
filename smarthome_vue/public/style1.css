@@ -83,13 +83,13 @@ border-right: 2px solid #b4aaa1;
     margin-right: 30px;
 }
 
-#color-img{
+.color-img{
     position: relative;
     max-width: 80%;
     margin-top: 5px;
 }
 
-#color-name{
+.color-name{
     margin-top: 30px;
     font-size: 20px;
 }
