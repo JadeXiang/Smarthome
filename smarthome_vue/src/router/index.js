@@ -3,9 +3,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '../store'
 
 import Home from '../views/Home.vue'
-
+// import two from '../../public/two.html'
 import one from '../views/one'
 // import two from '../views/two'
+import first from "../views/first";
 
 import Product from '../views/Product.vue'
 import Category from '../views/Category.vue'
@@ -20,6 +21,11 @@ import Success from '../views/Success.vue'
 const routes = [
   {
     path: '/',
+    name:'first',
+    component: first
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },
